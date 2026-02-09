@@ -1,0 +1,172 @@
+[
+  {
+    "id": 101,
+    "name": "Billie Eilish",
+    "description": "Amerikaanse zangeres bekend om haar unieke stijl en introspectieve muziek.",
+    "age": 22,
+    "isActive": true,
+    "birthDate": "2001-12-18",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/BillieEilish.jpg",
+    "genre": "pop",
+    "hobbies": ["songwriting", "drawing", "fashion"],
+    "recordLabel": {
+      "id": 1,
+      "name": "Universal Music Group",
+      "country": "United States",
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Universal_Music_group_logo.svg"
+    }
+  },
+  {
+    "id": 102,
+    "name": "Adele",
+    "description": "Britse zangeres met een krachtige stem en emotionele ballads.",
+    "age": 35,
+    "isActive": true,
+    "birthDate": "1988-05-05",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Adele.jpg",
+    "genre": "soul",
+    "hobbies": ["songwriting", "piano", "reading"],
+    "recordLabel": {
+      "id": 4,
+      "name": "XL Recordings",
+      "country": "United Kingdom",
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/XLrecordings.png"
+    }
+  },
+  {
+    "id": 103,
+    "name": "Drake",
+    "description": "Canadese artiest die hiphop en R&B combineert met commerciële hits.",
+    "age": 37,
+    "isActive": true,
+    "birthDate": "1986-10-24",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Drake.jpg",
+    "genre": "hiphop",
+    "hobbies": ["basketball", "acting", "songwriting"],
+    "recordLabel": {
+      "id": 2,
+      "name": "Sony Music Entertainment",
+      "country": "Japan",
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Sony_Music_Entertainment_Logo_2023.svg"
+    }
+  },
+  {
+    "id": 104,
+    "name": "Dua Lipa",
+    "description": "Popartiest met een moderne disco-invloeden en internationale hits.",
+    "age": 28,
+    "isActive": true,
+    "birthDate": "1995-08-22",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/DuaLipa.jpg",
+    "genre": "pop",
+    "hobbies": ["dancing", "traveling", "photography"],
+    "recordLabel": {
+      "id": 3,
+      "name": "Warner Music Group",
+      "country": "United States",
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Warner_Music_Group_logo_(2021).svg"
+    }
+  },
+  {
+    "id": 105,
+    "name": "Kendrick Lamar",
+    "description": "Amerikaanse rapper bekend om zijn maatschappijkritische teksten.",
+    "age": 36,
+    "isActive": true,
+    "birthDate": "1987-06-17",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/KendrickLamar.jpg",
+    "genre": "hiphop",
+    "hobbies": ["writing", "producing", "reading"],
+    "recordLabel": {
+      "id": 5,
+      "name": "Def Jam Recordings",
+      "country": "United States",
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Def_Jam_Recordings.svg"
+    }
+  },
+  {
+    "id": 106,
+    "name": "Taylor Swift",
+    "description": "Singer-songwriter met een carrière die meerdere muziekgenres overspant.",
+    "age": 34,
+    "isActive": true,
+    "birthDate": "1989-12-13",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/TaylorSwift.png",
+    "genre": "pop",
+    "hobbies": ["songwriting", "guitar", "baking"],
+    "recordLabel": {
+      "id": 1,
+      "name": "Universal Music Group",
+      "country": "United States",
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Universal_Music_Group_logo.svg"
+    }
+  },
+  {
+    "id": 107,
+    "name": "The Weeknd",
+    "description": "Canadese artiest met een donkere R&B en pop sound.",
+    "age": 33,
+    "isActive": true,
+    "birthDate": "1990-02-16",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/TheWeeknd.jpg",
+    "genre": "rnb",
+    "hobbies": ["producing", "painting", "fitness"],
+    "recordLabel": {
+      "id": 3,
+      "name": "Warner Music Group",
+      "country": "United States",
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Warner_Music_Group_logo_(2021).svg"
+    }
+  },
+  {
+    "id": 108,
+    "name": "Ed Sheeran",
+    "description": "Britse artiest die akoestische muziek combineert met pop.",
+    "age": 32,
+    "isActive": true,
+    "birthDate": "1991-02-17",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/EdSheeran.jpg",
+    "genre": "pop",
+    "hobbies": ["guitar", "cycling", "songwriting"],
+    "recordLabel": {
+      "id": 2,
+      "name": "Sony Music Entertainment",
+      "country": "Japan",
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Sony_Music_Entertainment_Logo_2023.svg"
+    }
+  },
+  {
+    "id": 109,
+    "name": "Lana Del Rey",
+    "description": "Artieste met een cinematografische stijl en melancholische teksten.",
+    "age": 38,
+    "isActive": true,
+    "birthDate": "1985-06-21",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/LanaDelRey.jpg",
+    "genre": "alternative",
+    "hobbies": ["poetry", "painting", "traveling"],
+    "recordLabel": {
+      "id": 1,
+      "name": "Universal Music Group",
+      "country": "United States",
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Universal_Music_Group_logo.svg"
+    }
+  },
+  {
+    "id": 110,
+    "name": "Post Malone",
+    "description": "Amerikaanse artiest die hiphop, pop en rock combineert.",
+    "age": 28,
+    "isActive": true,
+    "birthDate": "1995-07-04",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/PostMalone.jpg",
+    "genre": "pop",
+    "hobbies": ["gaming", "songwriting", "guitar"],
+    "recordLabel": {
+      "id": 5,
+      "name": "Def Jam Recordings",
+      "country": "United States",
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Def_Jam_Recordings.svg"
+    }
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Universal Music Group",
+    "description": "Een van de grootste platenmaatschappijen ter wereld met artiesten uit alle genres.",
+    "foundedYear": 1934,
+    "isActive": true,
+    "country": "United States",
+    "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Universal_Music_group_logo.svg"
+  },
+  {
+    "id": 2,
+    "name": "Sony Music Entertainment",
+    "description": "Internationaal muzieklabel met een sterke focus op pop, hiphop en elektronische muziek.",
+    "foundedYear": 1929,
+    "isActive": true,
+    "country": "Japan",
+    "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Sony_Music_Entertainment_Logo_2023.svg"
+  },
+  {
+    "id": 3,
+    "name": "Warner Music Group",
+    "description": "Amerikaans label dat zowel klassieke als moderne artiesten vertegenwoordigt.",
+    "foundedYear": 1958,
+    "isActive": true,
+    "country": "United States",
+    "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Warner_Music_Group_logo_(2021).svg"
+  },
+  {
+    "id": 4,
+    "name": "XL Recordings",
+    "description": "Onafhankelijk Brits label bekend om alternatieve en experimentele artiesten.",
+    "foundedYear": 1989,
+    "isActive": true,
+    "country": "United Kingdom",
+    "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/XLrecordings.png"
+  },
+  {
+    "id": 5,
+    "name": "Def Jam Recordings",
+    "description": "Iconisch hiphop- en R&B-label dat een grote invloed had op de muziekcultuur.",
+    "foundedYear": 1984,
+    "isActive": true,
+    "country": "United States",
+    "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Def_Jam_Recordings.svg"
+  }
+]
