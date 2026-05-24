@@ -6,14 +6,14 @@
     "age": 22,
     "isActive": true,
     "birthDate": "2001-12-18",
-    "imageUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/BillieEilish.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/BillieEilish.jpg",
     "genre": "pop",
     "hobbies": ["songwriting", "drawing", "fashion"],
     "recordLabel": {
       "id": 1,
       "name": "Universal Music Group",
       "country": "United States",
-      "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Universal_Music_Group_logo.svg"
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/Universal_Music_Group_logo.svg"
     }
   },
   {
@@ -23,14 +23,14 @@
     "age": 35,
     "isActive": true,
     "birthDate": "1988-05-05",
-    "imageUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Adele.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/Adele.jpg",
     "genre": "soul",
     "hobbies": ["songwriting", "piano", "reading"],
     "recordLabel": {
       "id": 4,
       "name": "XL Recordings",
       "country": "United Kingdom",
-      "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/XLrecordings.png"
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/XLrecordings.png"
     }
   },
   {
@@ -40,14 +40,14 @@
     "age": 37,
     "isActive": true,
     "birthDate": "1986-10-24",
-    "imageUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Drake.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/Drake.jpg",
     "genre": "hiphop",
     "hobbies": ["basketball", "acting", "songwriting"],
     "recordLabel": {
       "id": 2,
       "name": "Sony Music Entertainment",
       "country": "Japan",
-      "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Sony_Music_Entertainment_Logo_2023.svg"
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/Sony_Music_Entertainment_Logo_2023.svg"
     }
   },
   {
@@ -57,14 +57,14 @@
     "age": 28,
     "isActive": true,
     "birthDate": "1995-08-22",
-    "imageUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/DuaLipa.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/DuaLipa.jpg",
     "genre": "pop",
     "hobbies": ["dancing", "traveling", "photography"],
     "recordLabel": {
       "id": 3,
       "name": "Warner Music Group",
       "country": "United States",
-      "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Warner_Music_Group_logo_(2021).svg.png"
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/Warner_Music_Group_logo_(2021).svg.png"
     }
   },
   {
@@ -74,14 +74,14 @@
     "age": 36,
     "isActive": true,
     "birthDate": "1987-06-17",
-    "imageUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/KendrickLamar.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/KendrickLamar.jpg",
     "genre": "hiphop",
     "hobbies": ["writing", "producing", "reading"],
     "recordLabel": {
       "id": 5,
       "name": "Def Jam Recordings",
       "country": "United States",
-      "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Def_Jam_Recordings.svg"
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/Def_Jam_Recordings.svg"
     }
   },
   {
@@ -91,14 +91,14 @@
     "age": 34,
     "isActive": true,
     "birthDate": "1989-12-13",
-    "imageUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/TaylorSwift.png",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/TaylorSwift.png",
     "genre": "pop",
     "hobbies": ["songwriting", "guitar", "baking"],
     "recordLabel": {
       "id": 1,
       "name": "Universal Music Group",
       "country": "United States",
-      "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Universal_Music_Group_logo.svg"
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/Universal_Music_Group_logo.svg"
     }
   },
   {
@@ -108,14 +108,14 @@
     "age": 33,
     "isActive": true,
     "birthDate": "1990-02-16",
-    "imageUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/TheWeeknd.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/TheWeeknd.jpg",
     "genre": "rnb",
     "hobbies": ["producing", "painting", "fitness"],
     "recordLabel": {
       "id": 3,
       "name": "Warner Music Group",
       "country": "United States",
-      "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Warner_Music_Group_logo_(2021).svg.png"
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/Warner_Music_Group_logo_(2021).svg.png"
     }
   },
   {
@@ -125,14 +125,14 @@
     "age": 32,
     "isActive": true,
     "birthDate": "1991-02-17",
-    "imageUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/EdSheeran.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/EdSheeran.jpg",
     "genre": "pop",
     "hobbies": ["guitar", "cycling", "songwriting"],
     "recordLabel": {
       "id": 2,
       "name": "Sony Music Entertainment",
       "country": "Japan",
-      "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Sony_Music_Entertainment_Logo_2023.svg"
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/Sony_Music_Entertainment_Logo_2023.svg"
     }
   },
   {
@@ -142,14 +142,14 @@
     "age": 38,
     "isActive": true,
     "birthDate": "1985-06-21",
-    "imageUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/LanaDelRey.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/LanaDelRey.jpg",
     "genre": "alternative",
     "hobbies": ["poetry", "painting", "traveling"],
     "recordLabel": {
       "id": 1,
       "name": "Universal Music Group",
       "country": "United States",
-      "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Universal_Music_Group_logo.svg"
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/Universal_Music_Group_logo.svg"
     }
   },
   {
@@ -159,14 +159,14 @@
     "age": 28,
     "isActive": true,
     "birthDate": "1995-07-04",
-    "imageUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/PostMalone.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/PostMalone.jpg",
     "genre": "pop",
     "hobbies": ["gaming", "songwriting", "guitar"],
     "recordLabel": {
       "id": 5,
       "name": "Def Jam Recordings",
       "country": "United States",
-      "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Def_Jam_Recordings.svg"
+      "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/public/images/Def_Jam_Recordings.svg"
     }
   }
 ]
