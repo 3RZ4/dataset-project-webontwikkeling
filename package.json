@@ -32,6 +32,6 @@
     "mongodb": "^6.3.0"
   },
   "scripts": {
-    "start": "ts-node src/app.ts"
+    "start": "npx ts-node src/app.ts"
   }
 }
