@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= label.name %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<%- include('navbar') %>
+
+<div class="content">
+    <div class="detail-card">
+        <img src="<%= label.logoUrl %>" alt="<%= label.name %>" />
+        <h1><%= label.name %></h1>
+        <p><%= label.description %></p>
+        <p>Country: <%= label.country %></p>
+        <p>Founded: <%= label.foundedYear %></p>
+
+        <h3>Artists</h3>
+        <div class="cards">
+            <% labelArtists.forEach(a => { %>
+                <div class="card">
+                    <img src="<%= a.imageUrl %>" alt="<%= a.name %>" />
+                    <div class="card-body">
+                        <h2><%= a.name %></h2>
+                        <p><%= a.genre %> · <%= a.age %> jaar</p>
+                        <a class="view-link" href="/artists/<%= a.id %>">View →</a>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+
+        <a class="btn" href="/labels">← Back</a>
+    </div>
+</div>
+
+</body>
+</html>

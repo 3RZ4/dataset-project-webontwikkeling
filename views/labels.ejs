@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record Labels</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<%- include('navbar') %>
+
+<div class="content">
+    <h1>Record Labels</h1>
+
+    <div class="cards">
+        <% labels.forEach(l => { %>
+            <div class="card">
+                <img src="<%= l.logoUrl %>" alt="<%= l.name %>" />
+                <div class="card-body">
+                    <h2><%= l.name %></h2>
+                    <p><%= l.country %> · <%= l.foundedYear %></p>
+                    <a class="view-link" href="/labels/<%= l.id %>">View →</a>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</div>
+
+</body>
+</html>

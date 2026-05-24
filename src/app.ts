@@ -25,24 +25,13 @@ app.use(
 async function seedUsers() {
   const db = await connectDB();
   const usersCollection = db.collection("users");
-
   const count = await usersCollection.countDocuments();
-
   if (count === 0) {
     const adminPass = await bcrypt.hash("admin123", 10);
     const userPass = await bcrypt.hash("user123", 10);
-
     await usersCollection.insertMany([
-      {
-        username: "admin",
-        password: adminPass,
-        role: "ADMIN",
-      },
-      {
-        username: "user",
-        password: userPass,
-        role: "USER",
-      },
+      { username: "admin", password: adminPass, role: "ADMIN" },
+      { username: "user", password: userPass, role: "USER" },
     ]);
   }
 }
@@ -50,9 +39,7 @@ async function seedUsers() {
 async function seedArtists() {
   const db = await connectDB();
   const artistsCollection = db.collection("artists");
-
   const count = await artistsCollection.countDocuments();
-
   if (count === 0) {
     await artistsCollection.insertMany(artists);
   }
@@ -78,22 +65,11 @@ app.get("/login", (req: any, res: any) => {
 app.post("/login", async (req: any, res: any) => {
   const db = await connectDB();
   const usersCollection = db.collection("users");
-
-  const user = await usersCollection.findOne({
-    username: req.body.username,
-  });
-
+  const user = await usersCollection.findOne({ username: req.body.username });
   if (!user) return res.send("User not found");
-
   const valid = await bcrypt.compare(req.body.password, user.password);
-
   if (!valid) return res.send("Wrong password");
-
-  req.session.user = {
-    username: user.username,
-    role: user.role,
-  };
-
+  req.session.user = { username: user.username, role: user.role };
   res.redirect("/artists");
 });
 
@@ -104,21 +80,16 @@ app.get("/register", (req: any, res: any) => {
 app.post("/register", async (req: any, res: any) => {
   const db = await connectDB();
   const usersCollection = db.collection("users");
-
   const existing = await usersCollection.findOne({
     username: req.body.username,
   });
-
   if (existing) return res.send("Username already exists");
-
   const hashed = await bcrypt.hash(req.body.password, 10);
-
   await usersCollection.insertOne({
     username: req.body.username,
     password: hashed,
     role: "USER",
   });
-
   res.redirect("/login");
 });
 
@@ -139,6 +110,8 @@ app.get("/artists", isLoggedIn, async (req: any, res: any) => {
   let artists = await artistsCollection.find().toArray();
 
   const search = req.query.search || "";
+  const sort = req.query.sort || "";
+  const order = req.query.order || "asc";
 
   if (search) {
     artists = artists.filter((a: any) =>
@@ -146,9 +119,19 @@ app.get("/artists", isLoggedIn, async (req: any, res: any) => {
     );
   }
 
+  if (sort) {
+    artists.sort((a: any, b: any) => {
+      if (a[sort] < b[sort]) return order === "asc" ? -1 : 1;
+      if (a[sort] > b[sort]) return order === "asc" ? 1 : -1;
+      return 0;
+    });
+  }
+
   res.render("artists", {
     artists,
     search,
+    sort,
+    order,
     user: req.session.user,
   });
 });
@@ -156,11 +139,7 @@ app.get("/artists", isLoggedIn, async (req: any, res: any) => {
 app.get("/artists/:id", isLoggedIn, async (req: any, res: any) => {
   const db = await connectDB();
   const artistsCollection = db.collection("artists");
-
-  const artist = await artistsCollection.findOne({
-    id: Number(req.params.id),
-  });
-
+  const artist = await artistsCollection.findOne({ id: Number(req.params.id) });
   res.render("artist-detail", { artist });
 });
 
@@ -171,11 +150,9 @@ app.get(
   async (req: any, res: any) => {
     const db = await connectDB();
     const artistsCollection = db.collection("artists");
-
     const artist = await artistsCollection.findOne({
       id: Number(req.params.id),
     });
-
     res.render("edit-artist", { artist });
   },
 );
@@ -187,7 +164,6 @@ app.post(
   async (req: any, res: any) => {
     const db = await connectDB();
     const artistsCollection = db.collection("artists");
-
     await artistsCollection.updateOne(
       { id: Number(req.params.id) },
       {
@@ -199,15 +175,44 @@ app.post(
         },
       },
     );
-
     res.redirect("/artists/" + req.params.id);
   },
 );
 
+app.get("/labels", isLoggedIn, async (req: any, res: any) => {
+  const db = await connectDB();
+  const artistsCollection = db.collection("artists");
+  const allArtists = await artistsCollection.find().toArray();
+
+  const labelsMap: any = {};
+  allArtists.forEach((a: any) => {
+    if (!labelsMap[a.recordLabel.id]) {
+      labelsMap[a.recordLabel.id] = a.recordLabel;
+    }
+  });
+
+  const labels = Object.values(labelsMap);
+  res.render("labels", { labels });
+});
+
+app.get("/labels/:id", isLoggedIn, async (req: any, res: any) => {
+  const db = await connectDB();
+  const artistsCollection = db.collection("artists");
+  const allArtists = await artistsCollection.find().toArray();
+
+  const label = allArtists.find(
+    (a: any) => a.recordLabel.id === Number(req.params.id),
+  )?.recordLabel;
+  const labelArtists = allArtists.filter(
+    (a: any) => a.recordLabel.id === Number(req.params.id),
+  );
+
+  res.render("recordlabel-detail", { label, labelArtists });
+});
+
 async function start() {
   await seedUsers();
   await seedArtists();
-
   app.listen(PORT, () => {
     console.log(`Server running on http://localhost:3000`);
   });

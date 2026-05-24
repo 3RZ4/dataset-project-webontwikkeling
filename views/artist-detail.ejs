@@ -6,10 +6,7 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <div class="navbar">
-      <span class="logo">MusicWiki</span>
-      <a href="/logout">Logout</a>
-    </div>
+    <%- include('navbar') %>
 
     <div class="content">
       <div class="detail-card">
@@ -18,8 +15,14 @@
         <p><%= artist.description %></p>
         <p>Genre: <%= artist.genre %></p>
         <p>Age: <%= artist.age %></p>
+        <p>Hobbies: <%= artist.hobbies.join(', ') %></p>
+        <p>Birthdate: <%= artist.birthDate %></p>
         <h3>Record Label</h3>
-        <p><%= artist.recordLabel.name %></p>
+        <p>
+          <a href="/labels/<%= artist.recordLabel.id %>"
+            ><%= artist.recordLabel.name %></a
+          >
+        </p>
         <a class="btn" href="/artists">← Back</a>
       </div>
     </div>

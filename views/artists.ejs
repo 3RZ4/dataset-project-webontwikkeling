@@ -7,18 +7,30 @@
 </head>
 <body>
 
-<div class="navbar">
-    <span class="logo">MusicWiki</span>
-    <a href="/logout">Logout</a>
-</div>
+<%- include('navbar') %>
 
 <div class="content">
     <h1>Artists</h1>
 
     <form method="GET" class="search-row">
         <input type="text" name="search" placeholder="Search name..." value="<%= search || '' %>">
+        <input type="hidden" name="sort" value="<%= sort || '' %>">
+        <input type="hidden" name="order" value="<%= order || '' %>">
         <button type="submit">Search</button>
     </form>
+
+    <div class="sort-row">
+        <span>Sort by:</span>
+        <a href="?search=<%= search %>&sort=name&order=<%= sort === 'name' && order === 'asc' ? 'desc' : 'asc' %>">
+            Name <%= sort === 'name' ? (order === 'asc' ? '↑' : '↓') : '' %>
+        </a>
+        <a href="?search=<%= search %>&sort=age&order=<%= sort === 'age' && order === 'asc' ? 'desc' : 'asc' %>">
+            Age <%= sort === 'age' ? (order === 'asc' ? '↑' : '↓') : '' %>
+        </a>
+        <a href="?search=<%= search %>&sort=genre&order=<%= sort === 'genre' && order === 'asc' ? 'desc' : 'asc' %>">
+            Genre <%= sort === 'genre' ? (order === 'asc' ? '↑' : '↓') : '' %>
+        </a>
+    </div>
 
     <div class="cards">
         <% artists.forEach(a => { %>
