@@ -285,3 +285,45 @@ input[type="submit"]:hover {
   color: #7a6050;
   margin-bottom: 4px;
 }
+
+/* SORT ROW */
+.sort-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #7a6050;
+}
+
+.sort-row a {
+  color: #7a4f3a;
+  text-decoration: none;
+  padding: 4px 10px;
+  border: 1px solid #c9a882;
+  border-radius: 6px;
+  background-color: #fffaf4;
+}
+
+.sort-row a:hover {
+  background-color: #7a4f3a;
+  color: #fffaf4;
+  text-decoration: none;
+}
+
+/* NAVBAR LINKS */
+.navbar nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar nav a {
+  color: #e8d9c4;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.navbar nav a:hover {
+  color: #fffaf4;
+}
