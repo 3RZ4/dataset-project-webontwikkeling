@@ -6,7 +6,7 @@
     "foundedYear": 1934,
     "isActive": true,
     "country": "United States",
-    "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Universal_Music_group_logo.svg"
+    "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Universal_Music_Group_logo.svg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "foundedYear": 1929,
     "isActive": true,
     "country": "Japan",
-    "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Sony_Music_Entertainment_Logo_2023.svg"
+    "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Sony_Music_Entertainment_Logo_2023.svg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "foundedYear": 1958,
     "isActive": true,
     "country": "United States",
-    "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Warner_Music_Group_logo_(2021).svg"
+    "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Warner_Music_Group_logo_(2021).svg.png"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "foundedYear": 1989,
     "isActive": true,
     "country": "United Kingdom",
-    "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/XLrecordings.png"
+    "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/XLrecordings.png"
   },
   {
     "id": 5,
@@ -42,6 +42,6 @@
     "foundedYear": 1984,
     "isActive": true,
     "country": "United States",
-    "logoUrl": "https://raw.githubusercontent.com/3RZ4/dataset-project-webontwikkeling/main/images/Def_Jam_Recordings.svg"
+    "logoUrl": "https://github.com/3RZ4/dataset-project-webontwikkeling/blob/main/public/images/Def_Jam_Recordings.svg"
   }
 ]
