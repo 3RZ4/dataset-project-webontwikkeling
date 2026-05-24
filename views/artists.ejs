@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artists</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <span class="logo">🎵 MusicApp</span>
+    <a href="/logout">Logout</a>
+</div>
+
+<div class="content">
+    <h1>Artists</h1>
+
+    <form method="GET" class="search-row">
+        <input type="text" name="search" placeholder="Search name..." value="<%= search || '' %>">
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="cards">
+        <% artists.forEach(a => { %>
+            <div class="card">
+                <img src="<%= a.imageUrl %>" alt="<%= a.name %>" />
+                <div class="card-body">
+                    <h2><%= a.name %></h2>
+                    <p><%= a.genre %> · <%= a.age %> jaar</p>
+                    <a class="view-link" href="/artists/<%= a.id %>">View →</a>
+                    <% if (user && user.role === "ADMIN") { %>
+                        <br/>
+                        <a class="btn-edit" href="/artists/<%= a.id %>/edit">Edit</a>
+                    <% } %>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</div>
+
+</body>
+</html>

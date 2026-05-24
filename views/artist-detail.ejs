@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= artist.name %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <span class="logo">🎵 MusicApp</span>
+      <a href="/logout">Logout</a>
+    </div>
+
+    <div class="content">
+      <div class="detail-card">
+        <img src="<%= artist.imageUrl %>" alt="<%= artist.name %>" />
+        <h1><%= artist.name %></h1>
+        <p><%= artist.description %></p>
+        <p>Genre: <%= artist.genre %></p>
+        <p>Age: <%= artist.age %></p>
+        <h3>Record Label</h3>
+        <p><%= artist.recordLabel.name %></p>
+        <a class="btn" href="/artists">← Back</a>
+      </div>
+    </div>
+  </body>
+</html>

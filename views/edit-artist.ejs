@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Artist</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <span class="logo">🎵 MusicApp</span>
+    <a href="/logout">Logout</a>
+</div>
+
+<div class="content">
+    <div class="edit-card">
+        <h1>Edit Artist</h1>
+
+        <form method="POST" action="/artists/<%= artist.id %>/edit">
+            <label>Name</label>
+            <input type="text" name="name" value="<%= artist.name %>" />
+
+            <label>Age</label>
+            <input type="number" name="age" value="<%= artist.age %>" />
+
+            <label>Genre</label>
+            <select name="genre">
+                <option value="pop" <%= artist.genre === 'pop' ? 'selected' : '' %>>pop</option>
+                <option value="hiphop" <%= artist.genre === 'hiphop' ? 'selected' : '' %>>hiphop</option>
+                <option value="rnb" <%= artist.genre === 'rnb' ? 'selected' : '' %>>rnb</option>
+            </select>
+
+            <label>Image URL</label>
+            <input type="text" name="imageUrl" value="<%= artist.imageUrl %>" />
+
+            <button type="submit">Save</button>
+        </form>
+
+        <a class="btn" href="/artists/<%= artist.id %>">← Back</a>
+    </div>
+</div>
+
+</body>
+</html>

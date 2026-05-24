@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <span class="logo">🎵 MusicApp</span>
+    </div>
+
+    <div class="login-wrap">
+      <div class="login-box">
+        <h1>Register</h1>
+        <form method="POST" action="/register">
+          <input type="text" name="username" placeholder="Username" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Register</button>
+        </form>
+        <div class="sub">
+          Al een account? <a href="/login">Back to login</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
